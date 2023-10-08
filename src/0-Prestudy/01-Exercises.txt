@@ -1,0 +1,15 @@
+// =================================
+// Section 1: What is Design?
+// =================================
+
+This set of exercises are about software design.
+
+Each file has a number of questions about design.
+Please write down your answers to these questions.
+
+There are no "right" answers! We will be discussing these answers in the first session of the course!
+
+Please work through the following files:
+
+* 01a-WhatIsDesign.md
+* 01b-DesignNoughtsAndCrosses.md

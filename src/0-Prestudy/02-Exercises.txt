@@ -1,0 +1,22 @@
+﻿// =================================
+// Section 2: Introduction to F#
+// =================================
+
+These exercises introduce you to the
+basics of working with F#
+
+Read through and understand the examples
+* 01a-IntroToFSharp_A.fsx
+* 01b-IntroToFSharp_B.fsx
+* 01c-IntroToFSharp_C.fsx
+
+Do this exercise:
+* 01d-IntroToFSharp_Exercise.fsx
+
+-------------------------
+
+Need help with F# syntax?
+* Look at "/src/Basic syntax you need to know.fsx"
+
+Having trouble with F# intellisense?
+* See the "Troubleshooting" section in "/src/00-HelloWorld.fsx"

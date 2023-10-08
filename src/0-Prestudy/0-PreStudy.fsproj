@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <!--
+    Warning FS0025: Incomplete pattern matches on this expression.
+    -->
+    <WarningsAsErrors>FS0025</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="01-Exercises.txt" />
+    <None Include="01a-WhatIsDesign.md" />
+    <None Include="01b-DesignNoughtsAndCrosses.md" />
+    <Content Include="02-Exercises.txt" />
+    <None Include="02a-IntroToFSharp_A.fsx" />
+    <None Include="02b-IntroToFSharp_B.fsx" />
+    <None Include="02c-IntroToFSharp_C.fsx" />
+    <None Include="02d-IntroToFSharp_Exercise.fsx" />
+    <None Include="02e-IntroToFSharp_Exercise(answer).fsx" />
+    <Content Include="03-Exercises.txt" />
+    <None Include="03a-FunctionsAsThings.fsx" />
+    <None Include="03b-FunctionCompositionAndPiping.fsx" />
+    <None Include="03c-TypeInference.fsx" />
+    <None Include="03d-Exercise-TypeSignatures.fsx" />
+    <None Include="03e-Exercise-TypeSignatures(answer).fsx" />
+    <None Include="03f-AlgebraicTypes.fsx" />
+    <None Include="Basic syntax you need to know.fsx" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.5.2" />
+  </ItemGroup>
+
+</Project>
