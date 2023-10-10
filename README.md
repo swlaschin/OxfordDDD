@@ -30,18 +30,33 @@ Installation instructions for F#:
 * For Windows: https://fsharp.org/use/windows/
 * For Linux: https://fsharp.org/use/linux/
 
-For an F#-friendly editor, I recommend Visual Studio Code (all platforms), [JetBrains Rider](https://www.jetbrains.com/rider/) (all platforms), or Visual Studio (Windows and Mac).  Other editors such as Vim and Emacs do not have good support for F# right now (although for emacs, see [this](https://github.com/fsharp/emacs-fsharp-mode) and for vim, see [this](https://ionide.io/Editors/Vim/getting_started.html) and [this](https://www.codesuji.com/2021/04/10/F-Vim/)).
+For a known-to-be F#-friendly editor, I recommend:
+
+* Visual Studio Code (all platforms)
+* [JetBrains Rider](https://www.jetbrains.com/rider/) (all platforms)
+* Visual Studio (Windows and Mac).
+
+I personally have not used Vim and Emacs for interactive coding in F#, but here are some links on how to use them:
+
+* Emacs: [fsharp-mode](https://github.com/fsharp/emacs-fsharp-mode)
+* Vim: [Ionide support](https://ionide.io/Editors/Vim/getting_started.html) and [a blog post explaining how to use it](https://www.codesuji.com/2021/04/10/F-Vim/).
 
 If you would prefer not install on your local system, there are a number of ways to work on a remote VM or to develop in docker container, depending on your environment and editor. For example, VS Code has excellent support for [remote development using SSH](https://code.visualstudio.com/docs/remote/ssh) and for [editing in a local docker container](https://www.howtogeek.com/devops/how-to-edit-code-in-docker-containers-with-visual-studio-code/).
 
-**2. Clone this repo locally**
+**2. Clone or download this repo locally**
 
-For example, by using
+If you already have git installed, you can use:
 
 ```
 mkdir OxfordDDD
 git clone https://github.com/swlaschin/OxfordDDD
 ```
+
+If you don't have git installed, you can install it using [these instructions](https://github.com/git-guides/install-git). NOTE: we will not be using the features of git in the course, so installing it is not required (see below).
+
+If you don't want to install git, you can download a zip file from the "code" button on the github website as shown in this screenshot:
+
+![](download_zip.png)
 
 **3. Check that you can run F#**
 
