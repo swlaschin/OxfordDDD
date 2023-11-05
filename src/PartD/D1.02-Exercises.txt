@@ -1,0 +1,27 @@
+﻿// ================================================
+// State machine exercises:
+// ================================================
+
+Do one or more of the following exercises:
+
+Microwave API
+* D1.02a-Exercise-MicrowaveApi.fsx
+
+Shopping cart API
+* D1.02c-Exercise-ShoppingCartApi.fsx
+
+Delivery API
+* D1.02e--Exercise-DeliveryApi.fsx
+
+
+
+// ================================================
+// Got extra time?
+// ================================================
+
+Add the client side implementations that call the API
+
+* D1.03a-Exercise-ShoppingCartClient.fsx
+* D1.03c-Exercise-DeliveryApiClient.fsx
+
+

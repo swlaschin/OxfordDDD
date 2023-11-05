@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C.README.md" />
+    <Content Include="C1.01-Exercises.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C1.01a-ExamplesFromSlides.fsx" />
+    <None Include="C1.01b-ConstrainedTypes-Demo-EmailAddress.fsx" />
+    <None Include="C1.01b-ConstrainedTypes-Demo-String10.fsx" />
+    <None Include="C1.01c-Exercise-OrderLineQty.fsx" />
+    <None Include="C1.01d-Exercise-OrderLineQty(answer).fsx" />
+    <None Include="C1.01e-Exercise-ConstrainedTypes-ZipCode.fsx" />
+    <None Include="C1.01f-Exercise-ConstrainedTypes-ZipCode(answers).fsx" />
+    <None Include="C1.01g-ConstrainedTypes_FrequentQuestions.fsx" />
+    <None Include="C1.01h-Exercise-ConstrainedTypes-NonZeroInteger.fsx" />
+    <None Include="C1.01i-Exercise-ConstrainedTypes-NonZeroInteger(answers).fsx" />
+    <None Include="C1.01z-UnitsOfMeasureDemo.fsx" />
+    <Content Include="C1.02-Exercises.txt" />
+    <None Include="C1.02a-ExamplesFromSlides.fsx" />
+    <None Include="C1.02b-Exercise-Refactoring flags.fsx" />
+    <None Include="C1.02c-Exercise-Refactoring flags (answers).fsx" />
+    <Content Include="C1.03-Exercises.txt" />
+    <None Include="C1.03a-ExamplesFromSlides.fsx" />
+    <None Include="C1.03d-Exercise-SkincareFormulations.fsx" />
+    <None Include="C1.03e-Exercise-SkincareFormulations (answers).fsx" />
+    <None Include="C1.03f-Exercise-CardGame.fsx" />
+    <None Include="C1.03g-Exercise-CardGame (answers).fsx" />
+    <None Include="C1.03h-Exercise-Contact.fsx" />
+    <None Include="C1.03i-Exercise-Contact (answers).fsx" />
+    <None Include="C1.03j-Exercise-Payments.fsx" />
+    <None Include="C1.03k-Exercise-Payments (answers).fsx" />
+    <None Include="C1.03l-Exercise-YourOwnDomain.fsx" />
+    <Content Include="C1.04-Exercises.txt" />
+    <None Include="C1.04a-TotalFunctions.fsx" />
+    <None Include="C1.04b-Exercise-TotalFunctions.fsx" />
+    <None Include="C1.04c-Exercise-TotalFunctions(answers).fsx" />
+    <None Include="C1.04d-Exercise-NonEmptyList.fsx" />
+    <None Include="C1.04e-Exercise-NonEmptyList(answers).fsx" />
+    <Content Include="C2.01-Exercises.txt" />
+    <None Include="C2.01a-Exercise-EntityValue.fsx" />
+    <None Include="C2.01b-Exercise-EntityValue(answers).fsx" />
+    <None Include="C2.02-EqualityDemo.fsx" />
+    <Content Include="C2.03-Exercises.txt" />
+    <None Include="C2.03a-Exercise-Aggregate.fsx" />
+    <None Include="C2.03b-Exercise-Aggregate(answers).fsx" />
+  </ItemGroup>
+
+</Project>

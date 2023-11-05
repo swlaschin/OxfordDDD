@@ -1,0 +1,13 @@
+// =================================
+// Exercise: ubiquitous language
+// =================================
+
+
+1. Read a web page and extract the ubiquitous language
+
+* A1.02a-Exercise-UkTaxLanguage.txt
+
+
+2. Look an org-chart and think how to organize it into domains and subdomains
+
+* A1.02b-Exercise-NetflixDomains.txt

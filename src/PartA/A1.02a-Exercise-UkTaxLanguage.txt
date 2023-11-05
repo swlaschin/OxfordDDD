@@ -1,0 +1,11 @@
+// =================================
+// Exercise : Ubiquitous language for Income Tax
+// =================================
+
+We will analyse some text from the UK Government web site on income tax
+
+1. Visit the page at https://www.gov.uk/income-tax-rates
+2. How many concepts and domain-specific terminology can you identify?
+   (don't write them down, just browse the page and think about them)
+3. Is this a good web site for non-tax experts?
+

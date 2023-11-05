@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="B.README.md" />
+    <Content Include="B2.01-Exercises.txt" />
+    <None Include="B2.01a-Composition-and-piping.fsx" />
+    <Content Include="B2.02-Exercises.txt" />
+    <None Include="B2.02a-Exercise-ThinkOfANumber.fsx" />
+    <None Include="B2.02b-Exercise-ThinkOfANumber(answer).fsx" />
+    <Content Include="B2.03-Exercises.txt" />
+    <None Include="B2.03a-Exercise-ToRomanNumbers.fsx" />
+    <None Include="B2.03b-Exercise-ToRomanNumbers(answer).fsx" />
+    <None Include="B2.03c-Exercise-FromRomanNumbers.fsx" />
+    <None Include="B2.03d-Exercise-FromRomanNumbers(answer).fsx" />
+    <None Include="B2.03e-Exercise-Decorator.fsx" />
+    <None Include="B2.03f-Exercise-Decorator(answer).fsx" />
+    <Content Include="B2.04-Exercises.txt" />
+    <None Include="B2.04a-Exercise-FizzBuzz.fsx" />
+    <None Include="B2.04b-Exercise-FizzBuzz(answer with record).fsx" />
+    <None Include="B2.04c-Exercise-FizzBuzz(answer with union).fsx" />
+    <None Include="B2.04d-ParallelFizzBuzz.fsx" />
+    <Content Include="B2.05-PipelineOrientedWebApp.txt" />
+    <None Include="B3.01-CRC_Example.fsx" />
+    <Content Include="B3.02-Exercises.txt" />
+    <None Include="B3.02a-StudentEnrolmentOO.fsx" />
+    <None Include="B3.02b-StudentEnrolmentOO(answer).fsx" />
+    <None Include="B3.02c-StudentEnrolmentFP.fsx" />
+    <None Include="B3.02d-StudentEnrolmentFP(answer).fsx" />
+    <Content Include="B3.03-Exercises.txt" />
+    <None Include="B3.03a-TurtleGraphicsFP.fsx" />
+    <None Include="B3.03b-TurtleGraphicsFP(answer).fsx" />
+    <None Include="B3.03c-TurtleGraphicsOO.fsx" />
+    <None Include="B3.03d-TurtleGraphicsOO(answer).fsx" />
+    <None Include="BX.98-FunctionsAsThings.fsx" />
+    <None Include="BX.99-FP-FrequentQuestions.fsx" />
+    <None Include="FsharpOOSyntax.fsx" />
+    <None Include="TurtleGraphicsLib.fsx" />
+  </ItemGroup>
+
+</Project>

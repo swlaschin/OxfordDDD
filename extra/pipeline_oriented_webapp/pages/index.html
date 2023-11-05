@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+    <title>Hello from Giraffe</title>
+    <style>
+        form {
+            display: inline-block
+        }
+        button {
+            display: inline-block
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <form action="/hello" method="get"><button type="submit">GET /hello</button></form>
+            <form action="/hello" method="post"><button type="submit">POST /hello</button></form>
+            <form action="/hello/Scott" method="get"><button type="submit">GET /hello/Scott</button></form>
+            <form action="/hello/Bob" method="get"><button type="submit">GET /hello/Bob</button></form>
+        </li>
+        <li>
+            <form action="/goodbye" method="get"><button type="submit">GET /goodbye</button></form>
+        </li>
+        <li>
+            <form action="/ping" method="get"><button type="submit">GET /ping</button></form>
+            <form action="/pong" method="get"><button type="submit">GET /pong</button></form>
+        </li>
+        <li>
+            <form action="/jsonExample" method="post"><button type="submit">POST /jsonExample</button></form>
+        </li>
+        <li>
+            <form action="/customer/1" method="get"><button type="submit">GET /customer/1</button></form>
+            <form action="/customer/2" method="get"><button type="submit">GET /customer/2</button></form>
+            <form action="/customer/42" method="get"><button type="submit">GET /customer/42</button></form>
+        </li>
+        <li>
+            <form action="/denied" method="post"><button type="submit">POST /denied</button></form>
+        </li>
+    </ul>
+</body>
+</html>

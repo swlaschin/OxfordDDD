@@ -1,0 +1,49 @@
+﻿// =================================
+// Exercise 2: Student Enrolment
+// =================================
+
+-------------------------------
+Requirements
+-------------------------------
+
+A Student has a StudentId
+A Student can enrol for zero or more Courses
+As part of the enrolment process the eligibility of the Student is checked
+A successful enrolment is called a Enrolment
+
+A Course has a CourseId
+A Course can contain zero or more Students (up to a maximum, different for each Course)
+
+Each Course is assigned a Teacher
+A Teacher can be assigned to zero or more Courses, up to a maximum (per Teacher)
+
+At the end of the term, the Student is given a Grade (one of 5,4,3,2,Fail=0) for the Course
+
+The student can calculate their Grade Point Average (GPA)
+by averaging all the grades given for all their Enrollments.
+
+The teacher and administrators can calculate the Grade Point Average (GPA) of a particular Course
+by averaging all the grades for the enrollments in that Course.
+
+
+-------------------------------
+Exercises
+-------------------------------
+
+Design using a OO/behaviour approach first
+* B3.02a-StudentEnrolmentOO.fsx
+
+Design using a functional/type approach next
+* B3.02c-StudentEnrolmentFP.fsx
+
+// =================================
+// Got extra time?
+// =================================
+
+Add a new requirement:
+
+* There are two types of Students now: Regular and Auditor
+* An Auditor ("listener") can enrol in a Course like a Regular student
+  BUT they are not graded, and they are excluded from the GPA calculations.
+
+

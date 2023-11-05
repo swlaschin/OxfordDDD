@@ -1,0 +1,20 @@
+// =================================
+// Exercise A2.01: Create a codeless domain model
+// =================================
+
+1. Read through and understand the guidelines
+* "A2.01a.CodelessDomainModel - Guidelines.txt"
+
+2. Look at the TicTacToe example we did as a group
+* See link on the GDocs page
+* or see this file: "A2.01b.CodelessDomainModel-TicTacToe.txt"
+
+3. Document a coffee machine (as a group):
+* See link to your domain on the GDocs page
+* or add text to this file: "A2.01c.CodelessDomainModel-CoffeeMachine.txt"
+
+4. Document a domain one of you are expert in,
+   OR the registration process for this course:
+* See link to your domain on the GDocs page
+* or add text to this file: "A2.01d.CodelessDomainModel-YourOwnDomain.txt"
+

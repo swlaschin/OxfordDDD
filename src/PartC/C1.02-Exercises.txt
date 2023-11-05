@@ -1,0 +1,11 @@
+﻿// =================================
+// Refactoring Flags Exercise:
+// =================================
+
+Optional:
+* review code in the slides: C1.02a-ExamplesFromSlides.fsx
+
+Do:
+* C1.02b-Exercise-Refactoring flags.fsx
+* Read the questions and answers at the bottom of the answer file:
+

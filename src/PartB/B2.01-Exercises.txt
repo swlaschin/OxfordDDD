@@ -1,0 +1,8 @@
+﻿// =================================
+// Exercise 1: Composition and piping
+// =================================
+
+
+Read through and understand the example
+* B2.01a-Composition-and-piping.fsx
+

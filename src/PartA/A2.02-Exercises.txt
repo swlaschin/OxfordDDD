@@ -1,0 +1,40 @@
+﻿// =================================
+// Exercise: converting textual models into types
+// =================================
+
+Read through and understand the TicTacToe example:
+* A2.02b-TypedDomainModel-Demo-TicTacToe.fsx
+  compare it with the original at A2.01b-CodelessDomainModel-TicTacToe.txt
+
+Do the exercise in this file:
+* A2.02c-Exercise-TextToTypes.fsx
+
+If you didn't do the pre-study (or want a refresher)
+Work through the code in this file to see how to use types in detail
+* A2.02e-HowToWorkWithTypes.fsx
+
+
+// =================================
+// Exercise: Convert your domain model into types
+// =================================
+
+Convert the coffee machine domain into code using this file:
+*  A2.02h-TypedDomainModel-CoffeeMachine.fsx
+
+Convert your domain into code using this file:
+*  A2.02i-TypedDomainModel-YourOwnDomain.fsx
+
+* Compare your code with other people in your group
+
+// =================================
+// Got extra time?
+// =================================
+
+If you have time, look through the code in
+* A2.02w-ModelingWithChoices.fsx
+* A2.02x-Aliases-vs-WrapperTypes.fsx
+
+Got a question? It might be answered here:
+* A2.02z-DomainModeling-FrequentQuestions.fsx
+
+

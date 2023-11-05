@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="A.README.md" />
+    <None Include="A1.01-EventStormingDefinition.md" />
+    <Content Include="A1.01-Exercise-Eventstorming.txt" />
+    <Content Include="A1.02-Exercise-Ubiquitous language.txt" />
+    <Content Include="A1.02a-Exercise-UkTaxLanguage.txt" />
+    <Content Include="A1.02b-Exercise-NetflixDomains.txt" />
+    <Content Include="A2.01-Exercise-CodelessDomainModel.txt" />
+    <Content Include="A2.01a-CodelessDomainModel-Guidelines.txt" />
+    <Content Include="A2.01b-CodelessDomainModel-TicTacToe.txt" />
+    <Content Include="A2.01c-CodelessDomainModel-CoffeeMachine.txt" />
+    <Content Include="A2.01d-CodelessDomainModel-YourOwnDomain.txt" />
+    <Content Include="A2.02-Exercises.txt" />
+    <None Include="A2.02a-TypedDomainModel-Help.fsx" />
+    <None Include="A2.02b-TypedDomainModel-Demo-TicTacToe.fsx" />
+    <None Include="A2.02c-Exercise-TextToTypes.fsx" />
+    <None Include="A2.02d-Exercise-TextToTypes(answer).fsx" />
+    <None Include="A2.02e-HowToWorkWithTypes.fsx" />
+    <None Include="A2.02h-TypedDomainModel-CoffeeMachine.fsx" />
+    <None Include="A2.02i-TypedDomainModel-YourOwnDomain.fsx" />
+    <None Include="A2.02w-ModelingWithChoices.fsx" />
+    <None Include="A2.02x-Aliases-vs-WrapperTypes.fsx" />
+    <None Include="A2.02z-DomainModeling-FrequentQuestions.fsx" />
+  </ItemGroup>
+
+</Project>

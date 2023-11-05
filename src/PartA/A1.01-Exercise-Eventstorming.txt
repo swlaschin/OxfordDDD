@@ -1,0 +1,14 @@
+// =================================
+// Exercise: event storming
+// =================================
+
+
+1. Read a summary of event storming:
+* A1.01-EventStormingDefinition.md
+
+2. Event storm a breakfast-style cafe
+
+* Include events, business processes, commands from everyone involved
+  including Customers, Wait-staff/Servers and Cooks
+* Feel free to brainstorm -- you can always refine the details later
+

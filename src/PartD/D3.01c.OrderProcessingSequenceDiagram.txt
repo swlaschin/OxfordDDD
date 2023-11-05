@@ -1,0 +1,23 @@
+' a sequence diagram to explain order processing
+@startuml
+actor User as "User"
+participant OrderProcessing
+participant PaymentGateway
+participant Fulfillment
+
+User -> OrderProcessing: Place order
+OrderProcessing --> User: Order Confirmation
+OrderProcessing -> PaymentGateway: Request Payment Hold
+PaymentGateway --> OrderProcessing: Payment Hold Result
+alt payment hold failed
+    OrderProcessing --> User: Update payment method
+end
+alt payment hold succeeded
+  OrderProcessing -> Fulfillment : Fulfil order
+  ' backwards arrow allowed
+  OrderProcessing <- Fulfillment : Order fulfilled notification
+  OrderProcessing --> User: Order shipped notification
+  OrderProcessing -> PaymentGateway: Complete Payment
+  PaymentGateway --> OrderProcessing: Payment Result
+end
+@enduml

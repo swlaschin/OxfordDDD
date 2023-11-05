@@ -1,0 +1,8 @@
+﻿// =============================================
+// Pipeline oriented web app demo
+ =============================================
+
+Full code is in
+   /extra/pipeline_oriented_webapp
+
+For instructions how to run, see the README

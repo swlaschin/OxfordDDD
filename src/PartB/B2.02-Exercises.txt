@@ -1,0 +1,8 @@
+﻿// =================================
+// Exercise 2: ThinkOfANumber
+// =================================
+
+Do:
+* B2.02a-Exercise-ThinkOfANumber.fsx
+
+

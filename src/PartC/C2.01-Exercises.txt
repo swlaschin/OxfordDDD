@@ -1,0 +1,9 @@
+﻿// =================================
+// Entity/Value exercise
+// =================================
+
+
+Do the exercise:
+* C2.01a-Exercise-EntityValue.fsx
+
+

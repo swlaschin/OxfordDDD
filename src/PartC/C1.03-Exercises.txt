@@ -1,0 +1,26 @@
+﻿// =================================
+// Domain modelling practice
+// =================================
+
+Optional:
+* review code in the slides: C1.03a-ExamplesFromSlides.fsx
+
+Now practice putting it all together!
+
+Do the following exercises:
+
+* C1.03d-Exercise-SkincareFormulations.fsx
+* C1.03f-Exercise-CardGame.fsx
+    // Optional if you want to: do the implementation as well as the design
+
+// =================================
+// Got extra time?
+// =================================
+
+Do one or more of following exercises:
+
+* C1.03h-Exercise-Contact.fsx
+    // Optional if you want to: do the implementation as well as the design
+* C1.03j-Exercise-Payments.fsx
+* C1.03k-Exercise-YourOwnDomain.fsx
+    // e.g. convert a domain model from the first session to code.

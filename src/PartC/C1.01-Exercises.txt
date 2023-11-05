@@ -1,0 +1,27 @@
+﻿// =================================
+// Constrained types
+// =================================
+
+Review code in the slides:
+* C1.01a-ExamplesFromSlides.fsx
+
+Do work through these files
+* C1.01b-ConstrainedTypes-Demo-EmailAddress.fsx
+* C1.01b-ConstrainedTypes-Demo-String10.fsx
+
+Do the following exercises:
+* C1.01c-Exercise-OrderLineQty.fsx
+
+// =================================
+// Got extra time?
+// =================================
+
+Do the following exercises:
+* C1.01e-Exercise-ConstrainedTypes-ZipCode.fsx
+* C1.01h-Exercise-ConstrainedTypes-NonZeroInteger.fsx
+
+// =================================
+// Questions?
+// =================================
+
+* C1.01g-ConstrainedTypes_FrequentQuestions.fsx

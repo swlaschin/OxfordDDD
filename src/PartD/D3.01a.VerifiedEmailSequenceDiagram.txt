@@ -1,0 +1,16 @@
+' a sequence diagram for VerifiedEMail state transition
+
+/' build from the command line with
+     java -jar plantuml.jar D3.01a.VerifiedEmailSequenceDiagram.txt
+   or go to interactive PlantUML web page
+'/
+
+@startuml
+participant Client
+participant UnverifiedEMail
+participant VerifiedEMail
+
+Client -> UnverifiedEMail : verify
+UnverifiedEMail -> VerifiedEMail: transition
+
+@enduml

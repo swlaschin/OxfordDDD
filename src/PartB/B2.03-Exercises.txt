@@ -1,0 +1,15 @@
+﻿// =================================
+// Exercise 3: Roman numerals
+// =================================
+
+Do:
+* B2.03a-Exercise-ToRomanNumbers.fsx
+
+// =================================
+// Got extra time?
+// =================================
+
+If you have extra time, do
+
+* B2.03c-Exercise-FromRomanNumbers.fsx
+* B2.03e-Exercise-Decorator.fsx

@@ -1,0 +1,43 @@
+' a sequence diagram to explain a process for "Create New Library User Account"
+' 1. Look at the description below
+' 2. Translate that into PlantUML code here
+' 3. Generate a diagram from this code
+
+/'
+The objects or actors involved in creating a new user account:
+
+Librarian
+LibraryManagementSystem
+UserCredentialsDB
+EmailSystem
+User
+
+The steps are:
+
+1. The librarian request the system to create a new online library account
+2. The librarian then selects the library user account type
+3. The librarian enters the user’s details
+4. The user’s details are checked using the user Credentials Database
+5. The new library user account is created in the system
+6. A summary of the new account’s details is then emailed to the user
+
+'/
+
+
+
+@startuml
+
+actor Librarian
+participant LibraryManagementSystem
+database UserCredentialsDB
+participant EmailSystem
+actor User
+
+Librarian -> LibraryManagementSystem: 1. New account request
+Librarian -> LibraryManagementSystem: 2. Select account type
+Librarian -> LibraryManagementSystem: 3. Enter User details
+LibraryManagementSystem -> UserCredentialsDB : 4. Check User details
+LibraryManagementSystem -> LibraryManagementSystem : 5. Create new account
+LibraryManagementSystem -> User : 6. Email account details
+
+@enduml

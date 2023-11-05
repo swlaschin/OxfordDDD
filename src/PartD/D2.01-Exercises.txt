@@ -1,0 +1,16 @@
+﻿// ================================================
+// Event sourcing exercise:
+// ================================================
+
+Read and understand:
+
+* D2.01a-EventSourcedTurtle.fsx
+* D2.02b-EventSourcedTicTacToe.fsx
+
+Do one or more of the following exercises:
+
+* D2.02c-EventSourcedShoppingCart.fsx
+* D2.02e-EventSourcedDelivery.fsx
+* D2.02g-EventSourcedStudentEnrolment.fsx
+
+

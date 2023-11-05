@@ -1,0 +1,38 @@
+﻿// ================================================
+// Sequence diagrams exercise:
+// ================================================
+
+
+// ================================================
+// Prerequisites
+// ================================================
+
+We will be using PlantUML to generate diagrams from code.
+
+You can download a command line version (requires Java and Graphviz)
+of you can do it online.
+
+To work online:
+1. Go to https://plantuml.com/
+2. Click on "Online Server"
+3. Type in the code for the diagram
+
+For help on the diagrams: see https://plantuml.com/sequence-diagram
+
+
+// ================================================
+// Exercises
+// ================================================
+
+1. Look at the sample sequence diagram instructions and
+make sure you can generate them yourself using PlantUML:
+
+* D3.01a.VerifiedEmailSequenceDiagram.txt
+* D3.01b.EventSourcingSequenceDiagram.txt
+* D3.01c.OrderProcessingSequenceDiagram.txt
+
+2. Generate your own sequence diagrams for these files
+* D3.01d.OIDCSequenceDiagram.txt
+* D3.01f.LibrarySequenceDiagram.txt
+
+

@@ -1,0 +1,19 @@
+' a sequence diagram to explain event sourcing
+@startuml
+actor       Client
+participant Server
+database  EventStore
+entity Effect
+
+Client -> Server : command
+Server -> EventStore: request events
+Server <- EventStore: return events
+Server -> Server : restore state from events
+Server -> Server : handle command
+Server --> Effect: affect the real world
+Server -> EventStore: append new events
+
+@enduml
+
+
+

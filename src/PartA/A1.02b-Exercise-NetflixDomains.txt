@@ -1,0 +1,28 @@
+// =================================
+// Exercise : Ubiquitous language and subdomains : Netflix
+// =================================
+
+Below is the org chart for Netflix's "Content Group"
+
+1. Think about what the Ubiquitous Language for each department might be like
+2. How would you group these into domains and subdomains based on their shared language?
+
+
+Content Group
+- Scripted Series, US & Canada
+- Consumer Products
+- Content Delivery Architecture
+- Content, APAC ex-India
+- Overall Deals & Original Series
+- Animation Film
+- Comedy Original Series
+- Content & Product Innovation
+- Content Control
+- Content Strategy & Planning
+- Content, LATAM
+- Music
+- Content Data Science & Engineering
+
+
+
+Source: https://www.theofficialboard.com/org-chart/netflix

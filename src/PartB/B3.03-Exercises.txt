@@ -1,0 +1,33 @@
+﻿// =================================
+// Exercise 3: Turtle graphics
+// =================================
+
+-------------------------------
+Requirements
+-------------------------------
+
+Turtle graphics provides a representation of a physical “turtle”
+(a little robot with a pen) that draws on a sheet of paper on the floor.
+
+A turtle knows:
+* whether the pen is up or down
+* its direction as an angle in degrees counterclockwise (using float)
+* its position as an x,y coordinate (using floats)
+
+You can send the following commands to the turtle:
+
+* PenUp -- changes the state of the pen from down to up
+* PenDown -- changes the state of the pen from up to down
+* TurnLeft N -- rotates the turtle N degrees left (increases angle)
+* MoveForward N -- moves the turtle N centimetres forward
+
+
+-------------------------------
+Exercises
+-------------------------------
+
+Design using a functional/type approach
+* B3.03a-TurtleGraphicsFP.fsx
+
+Design using a OO/behaviour approach
+* B3.03c-TurtleGraphicsOO.fsx

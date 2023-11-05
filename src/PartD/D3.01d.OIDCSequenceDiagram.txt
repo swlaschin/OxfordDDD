@@ -1,0 +1,13 @@
+' a sequence diagram to explain OIDC
+' 1. Look at local file OIDC_sequence_diagram.jpg
+' 2. Translate that image into PlantUML code here
+' 3. Generate a diagram from this code and compare it with the original
+
+@startuml
+participant RelyingParty
+actor EndUser
+participant AuthorizationServer
+participant TokenEndpoint
+participant UserInfoEndpoint
+
+@enduml

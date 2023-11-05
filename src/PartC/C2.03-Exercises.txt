@@ -1,0 +1,9 @@
+﻿// =================================
+// Aggregate exercise
+// =================================
+
+
+Do the exercise:
+* C2.03a-Exercise-Aggregate.fsx
+
+

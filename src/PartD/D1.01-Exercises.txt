@@ -1,0 +1,10 @@
+﻿// ================================================
+// State machine exercises:
+// ================================================
+
+Read and understand:
+
+* D1.01a-StateMachineExamples.fsx
+* D1.01c-StateMachineTemplate.fsx
+* D1.01d-EmailStateTransition.fsx
+

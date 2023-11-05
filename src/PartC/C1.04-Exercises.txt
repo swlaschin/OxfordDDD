@@ -1,0 +1,17 @@
+﻿// =================================
+// Modeling with Total functions
+// =================================
+
+
+Read through and understand the TwelveDividedBy example
+* C1.04a-TotalFunctions.fsx
+
+Do the exercise:
+* C1.04b-Exercise-TotalFunctions.fsx
+
+// =================================
+// Got extra time?
+// =================================
+
+Do the following exercise:
+* C1.04d-Exercise-NonEmptyList.fsx
