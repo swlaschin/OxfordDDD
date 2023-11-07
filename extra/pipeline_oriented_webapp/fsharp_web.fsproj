@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <!-- change to net8.0, etc based on your framework -->
   </PropertyGroup>
 
   <ItemGroup>

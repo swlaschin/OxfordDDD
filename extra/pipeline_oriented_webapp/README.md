@@ -10,3 +10,7 @@ How to run this demo:
 
 3. Open a browser and go to
     `http://localhost:5000/`
+
+Errors:
+
+* If you get a framework error, open the file "fsharp_web.fsproj" and change the TargetFramework setting (see comment in that file)
