@@ -1,0 +1,17 @@
+﻿// =================================
+// Exercise: Validation
+// =================================
+
+Read through this example:
+* E.05a-ValidationWithMap.fsx
+
+Do the exercises here:
+* E.05b-Exercise-ValidationWithMap.fsx
+
+
+// =================================
+// Got extra time?
+// =================================
+
+See how validation is actually implemented here:
+* E.05d_HowValidationWorks.fsx

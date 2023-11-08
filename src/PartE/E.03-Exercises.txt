@@ -1,0 +1,28 @@
+﻿// =================================
+// Exercise 3: Complete pipelines with errors
+// =================================
+
+Read through and understand the example
+* 03a-RopWithStringError.fsx
+
+Do exercises:
+* 03b-Exercise-RopWithErrorType.fsx
+* 03d-Exercise-TurtleError.fsx
+
+Interested in transactions, compensations and retries?
+* 03g-RopCompensations.fsx
+
+
+// =================================
+// Got extra time?
+// =================================
+
+
+Read through and understand a more complex example
+* Look at the domain and the pure implementation
+* Look for Result.bind and Result.map
+
+* 03h-RopWithTicTacToe.fsx
+
+Exercise: Fix the compiler errors in this file:
+* 03i-Exercise-RopWithCoffeeMaker.fsx

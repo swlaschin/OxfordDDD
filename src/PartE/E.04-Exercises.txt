@@ -1,0 +1,10 @@
+﻿// =================================
+// Exercise: MapError
+// =================================
+
+Read through and understand the example
+* 04a-MapError.fsx
+
+Do:
+* E.04b-Exercise-MapError.fsx
+* E.04d-Exercise-TurtleError.fsx

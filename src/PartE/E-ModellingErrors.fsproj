@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Include="E.README.md" />
+    <Content Include="E.01-Exercises.txt" />
+    <None Include="E.01a-DesigningErrors.fsx" />
+    <None Include="E.01b-Exercise-DesigningErrors.fsx" />
+    <None Include="E.01c-Exercise-DesigningErrors (answers).fsx" />
+    <None Include="E.01d-Exercise-ChainingValidations.fsx" />
+    <None Include="E.01e-Exercise-ChainingValidations(answers).fsx" />
+    <Content Include="E.02-Exercises.txt" />
+    <None Include="E.02a-Exercise-ChainingValidationsWithBind.fsx" />
+    <None Include="E.02b-Exercise-ChainingValidationsWithBind(answers).fsx" />
+    <Content Include="E.03-Exercises.txt" />
+    <None Include="E.03a-RopWithStringError.fsx" />
+    <None Include="E.03b-Exercise-RopWithErrorType.fsx" />
+    <None Include="E.03c-Exercise-RopWithErrorType(answers).fsx" />
+    <None Include="E.03d-Exercise-TurtleError.fsx" />
+    <None Include="E.03e-Exercise-TurtleError(answers).fsx" />
+    <None Include="E.03g-RopCompensations.fsx" />
+    <None Include="E.03h-RopWithTicTacToe.fsx" />
+    <None Include="E.03i-Exercise-RopWithCoffeeMaker.fsx" />
+    <None Include="E.03j-Exercise-RopWithCoffeeMaker(answers).fsx" />
+    <Content Include="E.04-Exercises.txt" />
+    <None Include="E.04a-MapError.fsx" />
+    <None Include="E.04b-Exercise-MapError.fsx" />
+    <None Include="E.04c-Exercise-MapError(answers).fsx" />
+    <Content Include="E.05-Exercises.txt" />
+    <None Include="E.05a-ValidationWithMap.fsx" />
+    <None Include="E.05b-Exercise-ValidationWithMap.fsx" />
+    <None Include="E.05c-Exercise-ValidationWithMap(answers).fsx" />
+    <None Include="E.05d_HowValidationWorks.fsx" />
+    <None Include="Result.fsx" />
+    <None Include="RopUtil.fsx" />
+    <None Include="TurtleGraphicsLib.fsx" />
+    <None Include="Validation.fsx" />
+  </ItemGroup>
+
+</Project>

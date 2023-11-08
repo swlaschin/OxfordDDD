@@ -1,0 +1,12 @@
+﻿// =================================
+// Exercise 1: Returning Results
+// =================================
+
+
+Read through and understand the example
+* E.01a-DesigningErrors.fsx
+
+Do:
+* E.01b-Exercise-DesigningErrors.fsx
+* E.01d-Exercise-ChainingValidations.fsx TRICKY
+

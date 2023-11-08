@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29911.84
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51420EB4-382A-4423-B4A5-A5D5D4CD6993}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,6 +18,8 @@ EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "C-RefiningTheDomain", "src\PartC\C-RefiningTheDomain.fsproj", "{62000B7C-31F8-4AEE-B313-344020E1DC16}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "D-ModellingStateAndTime", "src\PartD\D-ModellingStateAndTime.fsproj", "{284A536E-A794-4EE7-9095-8D25537DD9A6}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "E-ModellingErrors", "src\PartE\E-ModellingErrors.fsproj", "{AC4E73C4-30AD-40A4-B432-A10B453176F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{284A536E-A794-4EE7-9095-8D25537DD9A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{284A536E-A794-4EE7-9095-8D25537DD9A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{284A536E-A794-4EE7-9095-8D25537DD9A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4E73C4-30AD-40A4-B432-A10B453176F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4E73C4-30AD-40A4-B432-A10B453176F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4E73C4-30AD-40A4-B432-A10B453176F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4E73C4-30AD-40A4-B432-A10B453176F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
