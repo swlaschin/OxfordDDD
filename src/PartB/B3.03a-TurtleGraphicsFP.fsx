@@ -54,6 +54,11 @@ let newTurtle = {
 // 2. Create function types to model the actions on the turtle
 // ===============================
 
+(*
+// Tip: to change just one field in the turtle, use this syntax
+let newTurtle = {oldTurtle with Direction=newDirection}
+*)
+
 // what are the input(s) and what are the output(s)
 type PenUp = ?? -> ??  // what goes here?
 
