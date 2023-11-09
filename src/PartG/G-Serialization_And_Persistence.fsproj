@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup />
+
+  <ItemGroup>
+    <Content Include="G1.01-Exercises.txt" />
+    <None Include="G1.01a-DtoDemo.fsx" />
+    <None Include="G1.01b-Exercise-DtoValidation.fsx" />
+    <None Include="G1.01c-Exercise-DtoValidation(answers).fsx" />
+    <None Include="G1.01g-NewsDomainDtoExample.fsx" />
+    <Content Include="G1.02-Exercises.txt" />
+    <Content Include="G1.03-Exercises.txt" />
+    <None Include="PersonDomain.fsx" />
+    <None Include="Result.fsx" />
+    <None Include="Validation.fsx" />
+    <None Include="G.README.md" />
+  </ItemGroup>
+
+</Project>

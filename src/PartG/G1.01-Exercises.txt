@@ -1,0 +1,14 @@
+﻿// =================================
+// Exercise: Validating and serializing DTOs
+// =================================
+
+Review the demo here:
+* G1.01a-DtoDemo.fsx
+
+Do the exercises here:
+* G1.01b-Exercise-DtoValidation.fsx
+
+For a real-world, complex example, see:
+* G1.01g-NewsDomainDtoExample.fsx
+
+
