@@ -1,0 +1,81 @@
+// =================================
+// Exercise: Context maps
+// =================================
+
+
+Here is a description of some bounded contexts and their relationships.
+Turn this into a context map!
+
+* Look at the other context maps in this folder to see what the syntax is.
+* And check the reference at https://contextmapper.org/docs/context-map/
+
+IMPORTANT: Do use the following annotations if applicable:
+
+* SK - Shared kernel
+• CF - Conformist (supplier driven)
+• C/S - Consumer driven (Customer/Supplier) - put a C on the customer/consumer side and S on the supplier side
+• ACL - Anti corruption layer  (protect from another domain language "corrupting" your domain)
+
+Don't worry about all the other annotations available at that site! Too complicated!
+
+======================================
+Domain: e-commerce startup
+======================================
+
+A e-commerce startup is being built.
+Some of the things they need to do are:
+
+* Process payments using a third party payment processor
+* Deliver items using a third party fulfillment service
+* Send emails to customers using a third party email service
+
+Exercise: Create a context map for this domain
+
+Answer:
+
+ContextMap ECommerceStartup {
+  contains ECommerceStartup
+  contains ThirdPartyPaymentProcessor
+  contains ThirdPartyFulfillmentSystem
+  contains ThirdPartyEmailService
+
+  ECommerceStartup [ACL] <- ThirdPartyPaymentProcessor
+  ECommerceStartup [ACL] <- ThirdPartyFulfillmentSystem
+  ECommerceStartup [ACL] <- ThirdPartyEmailService
+}
+
+
+
+======================================
+Domain: conference organizing
+======================================
+
+A conference organizer is putting on a conference.
+Some of the things they need to do are:
+
+* They have their own internal system for tracking the attendees
+* Book hotels for attendees using a hotel reservation service such as booking.com
+* Book flights for attendees using a airline reservation service such as SABRE
+* They need a website and have outsourced the building of this to a contractor. But they collaborate on the design
+* The internal system also sends data to a reporting system tool using the reporting system's API
+
+Exercise: Create a context map for this domain
+
+Answer:
+
+ContextMap ConferencePlanning {
+  contains ConferencePlanner
+  contains HotelReservationSystem
+  contains AirlineReservationSystem
+  contains Website
+  contains ReportingSystem
+
+  ConferencePlanner [ACL] <- HotelReservationSystem
+  ConferencePlanner [ACL] <- AirlineReservationSystem
+  ConferencePlanner [SK] <-> [SK] Website
+  ConferencePlanner [CF] <-> ReportingSystem
+}
+
+Note:
+    building the website could also be done as consumer driven like this:
+        ConferencePlanner[C] <- [S] Website

@@ -25,6 +25,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "F-PurityAndIO", "src\PartF\
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "G-Serialization_And_Persistence", "src\PartG\G-Serialization_And_Persistence.fsproj", "{A88110AB-2645-4032-85AB-E263BAD6BEF8}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "H-DDD_Architecture", "src\PartH\H-DDD_Architecture.fsproj", "{CD4A9461-7727-49FF-A20E-8EACC1DC8A54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{A88110AB-2645-4032-85AB-E263BAD6BEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A88110AB-2645-4032-85AB-E263BAD6BEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A88110AB-2645-4032-85AB-E263BAD6BEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD4A9461-7727-49FF-A20E-8EACC1DC8A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD4A9461-7727-49FF-A20E-8EACC1DC8A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD4A9461-7727-49FF-A20E-8EACC1DC8A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD4A9461-7727-49FF-A20E-8EACC1DC8A54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

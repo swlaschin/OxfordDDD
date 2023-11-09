@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup />
+
+  <ItemGroup>
+    <None Include="H.README.md" />
+    <Content Include="H1.03-Exercises.txt" />
+    <Content Include="H1.04-Exercises.txt" />
+    <Content Include="H1.04a-Exercise-ContextMaps.txt" />
+    <Content Include="H1.04b-Exercise-ContextMaps(answers).txt" />
+    <None Include="ContextMap-DDDSample.cml" />
+    <None Include="ContextMap-Insurance.cml" />
+    <None Include="H.slides_summary.md" />
+  </ItemGroup>
+
+</Project>

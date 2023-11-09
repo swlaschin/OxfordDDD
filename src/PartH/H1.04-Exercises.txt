@@ -1,0 +1,10 @@
+// =================================
+// Exercise: Context maps
+// =================================
+
+Do
+* H1.04a-Exercise-ContextMaps.txt
+
+References:
+* https://contextmapper.org/docs/context-map/
+* https://www.slideshare.net/paucls/ddd-strategic-design-context-maps-paulo-clavijo-april-2018
