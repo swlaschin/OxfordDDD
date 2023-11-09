@@ -1,0 +1,14 @@
+﻿// =================================
+// Exercise: Pushing I/O to the edges
+// =================================
+
+
+Read through and understand the impure and pure implementations
+* F1.01a-CompareStrings.fsx
+* F1.01b-CompareStringsAsync.fsx
+
+Exercise: Read the requirements and then refactor the impure implementation into a pure one:
+* F1.01e-UpdateCustomer-Impure.fsx  // read this
+* F1.01e-Exercise-UpdateCustomer-Pure.fsx  // refactor to this
+
+

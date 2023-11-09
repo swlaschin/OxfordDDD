@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="F.README.md" />
+    <Content Include="F1.01-Exercises.txt" />
+    <None Include="F1.01a-CompareStrings.fsx" />
+    <None Include="F1.01b-CompareStringsAsync.fsx" />
+    <None Include="F1.01e-UpdateCustomer-Impure.fsx" />
+    <None Include="F1.01f-Exercise-UpdateCustomer-Pure.fsx" />
+    <None Include="F1.01g-Exercise-UpdateCustomer-Pure(answers).fsx" />
+    <Content Include="F1.02-Exercises.txt" />
+    <Content Include="F1.03.Exercises.txt" />
+    <None Include="FPTurtleLib.fsx" />
+    <None Include="FPTurtleLibBounded.fsx" />
+    <None Include="PersonDomain.fsx" />
+    <None Include="Result.fsx" />
+    <None Include="RopUtil.fsx" />
+    <None Include="Common.fsx" />
+    <None Include="Expecto.fsx" />
+  </ItemGroup>
+
+</Project>
