@@ -76,7 +76,7 @@ let fromDto (dto:PersonalNameDto) :Validation<PersonalName,string> =
         |> String10.create "first name"
         |> Validation.ofResult
     let lastOrError =
-        dto.first
+        dto.last
         |> String10.create "last name"
         |> Validation.ofResult
 

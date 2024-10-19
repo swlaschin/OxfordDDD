@@ -54,8 +54,8 @@ A conference organizer is putting on a conference.
 Some of the things they need to do are:
 
 * They have their own internal system for tracking the attendees
-* Book hotels for attendees using a hotel reservation service such as booking.com
-* Book flights for attendees using a airline reservation service such as SABRE
+* Book hotels for attendees using a third party hotel reservation service such as booking.com
+* Book flights for attendees using a third party airline reservation service such as SABRE
 * They need a website and have outsourced the building of this to a contractor. But they collaborate on the design
 * The internal system also sends data to a reporting system tool using the reporting system's API
 
@@ -70,8 +70,8 @@ ContextMap ConferencePlanning {
   contains Website
   contains ReportingSystem
 
-  ConferencePlanner [ACL] <- HotelReservationSystem
-  ConferencePlanner [ACL] <- AirlineReservationSystem
+  ConferencePlanner [ACL,CF?] <- HotelReservationSystem
+  ConferencePlanner [ACL,CF?] <- AirlineReservationSystem
   ConferencePlanner [SK] <-> [SK] Website
   ConferencePlanner [CF] <-> ReportingSystem
 }
