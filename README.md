@@ -36,6 +36,8 @@ For a known-to-be F#-friendly editor, I recommend:
 * [JetBrains Rider](https://www.jetbrains.com/rider/) (all platforms)
 * Visual Studio (Windows and Mac).
 
+NOTE: I prefer to change the defaults in VSCode and Visual Studio to be less distracting. A list of the settings is available in the file [vscode_setup.md](vscode_setup.md)
+
 I personally have not used Vim and Emacs for interactive coding in F#, but here are some links on how to use them:
 
 * Emacs: [fsharp-mode](https://github.com/fsharp/emacs-fsharp-mode)
