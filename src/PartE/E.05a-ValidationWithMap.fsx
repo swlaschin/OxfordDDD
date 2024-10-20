@@ -2,7 +2,7 @@
 // Example: Combine validation functions using map2/map3 etc
 // ================================================
 
-// Load a file with library functions for Result
+// Load a file with library functions for Validation
 #load "Validation.fsx"  // TIP evaluate this import separately before evaluating the rest of the code below
 
 // =============================================
