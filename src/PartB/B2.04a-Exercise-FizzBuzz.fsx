@@ -38,34 +38,6 @@ simpleFizzBuzz 4
 [1..30] |> List.map simpleFizzBuzz |> String.concat ","
 
 // =======================================
-// Active patterns version
-// =======================================
-
-// F# also supports "active patterns" where you can pattern match
-// on functions. This workshop is not really about F# in detail,
-// but it's a nice feature to encapsulate logic cleanly
-
-let (|DivisibleBy|_|) factor n =
-    if n |> isDivisibleBy factor then
-        Some DivisibleBy
-    else
-        None
-
-// Here's what FizzBuzz looks like using active patterns
-let simpleFizzBuzz_v2 n =
-    match n with
-    | DivisibleBy 3 & DivisibleBy 5 ->
-        "FizzBuzz"
-    | DivisibleBy 3 ->
-        "Fizz"
-    | DivisibleBy 5 ->
-        "Buzz"
-    | _ ->
-        string n
-
-
-
-// =======================================
 // Exercise: Rewrite FizzBuzz using a piping model.
 // =======================================
 
@@ -113,7 +85,7 @@ let myData2 = SomethingElse 42
 let result =
     match myData with
     | Something str ->
-    | SomethingElse i > ...
+    | SomethingElse i -> ...
 
 *)
 
@@ -144,6 +116,16 @@ let handle15Case myData =
     // single "handle" function that can be reused for 3, 5, and 15.
 
 
+// If still unhandled at the end,
+// convert data.number into a string,
+// else return data.handled
+let finalStep myData =
+    if myData is unhandled then
+        // convert unhandled number to string
+        string (unhandled number from myData)
+    else
+        // return the handled string
+        (handled string from myData)
 
 // fizzBuzz takes an int and returns a string
 let fizzBuzz (n:int) :string =

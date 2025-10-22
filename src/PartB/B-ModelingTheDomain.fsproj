@@ -15,6 +15,7 @@
     <Content Include="B2.03-Exercises.txt" />
     <None Include="B2.03a-Exercise-ToRomanNumbers.fsx" />
     <None Include="B2.03b-Exercise-ToRomanNumbers(answer).fsx" />
+    <None Include="B2.03x-ToRomanNumbers_different_implementations.fsx" />
     <None Include="B2.03c-Exercise-FromRomanNumbers.fsx" />
     <None Include="B2.03d-Exercise-FromRomanNumbers(answer).fsx" />
     <None Include="B2.03e-Exercise-Decorator.fsx" />
@@ -24,6 +25,7 @@
     <None Include="B2.04b-Exercise-FizzBuzz(answer with record).fsx" />
     <None Include="B2.04c-Exercise-FizzBuzz(answer with union).fsx" />
     <None Include="B2.04d-ParallelFizzBuzz.fsx" />
+    <None Include="B2.04e-FizzBuzz_ActivePattern.fsx" />
     <Content Include="B2.05-PipelineOrientedWebApp.txt" />
     <None Include="B3.01-CRC_Example.fsx" />
     <Content Include="B3.02-Exercises.txt" />

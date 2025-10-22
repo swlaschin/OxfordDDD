@@ -26,6 +26,9 @@ let fromRomanNumerals input =
     input
     |> ?
     |> ?
+    // finally, we have a list of IIIIIIIIIIII
+    // so return the count of them
+    |> String.length
 
 // test it
 fromRomanNumerals "IV"     // 4

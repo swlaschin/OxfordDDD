@@ -95,8 +95,10 @@ let handle divisor label fizzBuzzData =
 // else return data.handled
 let finalStep fizzBuzzData =
     if fizzBuzzData.Output = "" then
+        // convert unhandled number to string
         string fizzBuzzData.Number // convert number to string
     else
+        // return the handled string
         fizzBuzzData.Output
 
 // something else to put in the pipeline

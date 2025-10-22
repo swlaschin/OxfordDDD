@@ -77,6 +77,12 @@ toRomanNumerals_v2 1947
 
 // ======================================
 // What about the special forms IV,IX,XC etc?
+    // 4 IIII becomes IV
+    // 9 VIIII becomes IX
+    // 40 XXXX becomes XL
+    // 90 LXXXX becomes XC
+    // 400 CCCC becomes CD
+    // 900 DCCCC becomes CM
 //
 // Exercise III:
 // * Add these as additional transforms at the end of the pipe
@@ -105,18 +111,23 @@ toRomanNumerals_v3 1999
 // What about logging?
 //
 // Exercise IV:
-// * Add a logging step at the end of the pipeline
+// * Add some logging steps in the pipeline
 // ======================================
 
 let toRomanNumerals_v4 number =
-    // helper function
-    let logger output =
-        // print "The input was %i and the output was %s"
-        // anything else?
+    
+    // logger function
+    let logger context pipelineValue =
+        printfn $"[{context}] The pipeline value is {pipelineValue}" 
+        // is something missing?
 
     String.replicate number "I"
     |> replace "IIIII" "V"
-    |> ???
-    |> ???
+    |> logger "after V"
+    |> replace "VV" "X"   // why is this a compiler error?
+    |> replace "XXXXX" "L" 
+    |> logger "after XXXXX"
+    //|> ???
+    //|> ???
     // last step
-    |> logger
+    |> logger "final result"

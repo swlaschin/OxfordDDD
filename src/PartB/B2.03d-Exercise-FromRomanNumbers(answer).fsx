@@ -37,6 +37,8 @@ let fromRomanNumerals input =
     |> replace "L" "XXXXX"
     |> replace "X" "VV"
     |> replace "V" "IIIII"
+    // finally, we have a list of IIIIIIIIIIII
+    // so return the count of them
     |> String.length
 
 // test it

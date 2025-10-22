@@ -90,19 +90,21 @@ let handle divisor label fizzBuzzData =
 // else return the Handled value
 let finalStep fizzBuzzData =
     match fizzBuzzData with
-    // if it is already handled
-    | Handled str ->
-        str // use the string
-
     // if it is not handled
     | Unhandled number ->
-        string number // convert to string
+        // convert unhandled number to string
+        string number
+
+    // if it is already handled
+    | Handled str ->
+        // return the handled string
+        str
+
 
 
 // Finally, the main fizzBuzz function!
 let fizzBuzz (n:int) :string =
-    n
-    |> Unhandled   // initial state
+    (Unhandled n)   // initial state
     |> handle 15 "FizzBuzz"
     |> handle 3 "Fizz"
     |> handle 5 "Buzz"
