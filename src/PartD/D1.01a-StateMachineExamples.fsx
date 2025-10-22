@@ -44,20 +44,34 @@ type Verify = UnverifiedEmail -> Email
 // -----------------------------------------------
 
 // 1. Create a type for each state's data
-type WhitePlayer = WhitePlayer of string
-type BlackPlayer = BlackPlayer of string  // don't want to mix them up
+type WhiteToPlay = WhiteToPlay
+type BlackToPlay = BlackToPlay   // use the name of the type as a tag 
 
 
 // 2. Create a choice covering all states
 //    Each choice contains the data for that state
 type ChessState =
-    | WhiteToPlay of WhitePlayer
-    | BlackToPlay of BlackPlayer
-    | GaveOver
+    | WhiteToPlay of WhiteToPlay
+    | BlackToPlay of BlackToPlay
+    | GameOver
+
 
 // 3. Create "API" functions representing each transition
-type PlayWhite = WhitePlayer -> ChessState
-type PlayBlack = BlackPlayer -> ChessState
+type PlayWhite = WhiteToPlay -> ChessState
+type PlayBlack = BlackToPlay -> ChessState
+
+
+// alternative, more complicated version which limits output states  
+module AlternativeChessDesign = 
+    type ChessStateAfterWhitePlays =
+        | BlackToPlay of BlackToPlay
+        | GameOver
+    type PlayWhite = WhiteToPlay -> ChessStateAfterWhitePlays
+
+    type ChessStateAfterBlackPlays =
+        | WhiteToPlay of WhiteToPlay
+        | GameOver
+    type PlayBlack = BlackToPlay -> ChessStateAfterBlackPlays
 
 (*
 Questions?

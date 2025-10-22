@@ -10,4 +10,5 @@ participant AuthorizationServer
 participant TokenEndpoint
 participant UserInfoEndpoint
 
+RelyingParty -> RelyingParty : Step 1
 @enduml

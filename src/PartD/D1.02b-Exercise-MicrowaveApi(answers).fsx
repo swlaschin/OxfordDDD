@@ -23,15 +23,15 @@ How it works:
    1. User sets the TimeRemaining and then pushes Start
       Note this can only been done when the oven is in "Door Closed and Idle" state
    2. If the user opens the door before the timer has finished:
-      the timer pause and the oven is in "Door Open and Paused" State
-   2. When the timer has finished:
+      the timer pauses and the oven is in "Door Open and Paused" State
+   3. When the timer has finished:
       the timer is reset and the oven is in "Door Closed and Idle" State
 
 Business rules:
 
 * The microwave cannot be running if the door is open
 * The microwave cannot be running if the TimeRemaining = 0
-
+* Once the microwave is running, you can't change the time (keep it simple!)
 
 *)
 
@@ -59,7 +59,8 @@ type TimeRemaining = private TimeRemaining of NonZeroInteger
 type DoorOpenIdleState = DoorOpenIdleState
 type DoorClosedIdleState = DoorClosedIdleState
     // Note: even though there is no data, we want to keep these two states separate,
-    // so we define new type for each one
+    // so we define a new type for each one.
+    // We can do that by using the name of the type.
 
 /// The running state needs to keep track of the time remaining
 type RunningState = {
@@ -85,13 +86,33 @@ type State =
 // ===========================
 
 type Start =
-    TimeRemaining -> DoorClosedIdleState -> State
+    TimeRemaining * DoorClosedIdleState -> State
 type OpenDoorWhileIdle =
     DoorClosedIdleState -> State
 type OpenDoorWhileRunning =
     RunningState -> State
 type CloseDoorWhilePaused =
     DoorOpenPausedState -> State
+
+// alternative design with overly general approach
+module AlternativeDesignWithGeneralStateChange =
+
+    type OpenDoor =
+        State -> State   // what happens if door is already open
+    type CloseDoor =
+        State -> State  
+
+// alternative design with very explicit states
+module AlternativeDesignWithExplicitState =
+
+    type Start =
+        TimeRemaining * DoorClosedIdleState -> RunningState
+    type OpenDoorWhileIdle =
+        DoorClosedIdleState -> DoorOpenPausedState
+    type OpenDoorWhileRunning =
+        RunningState -> DoorOpenPausedState
+    type CloseDoorWhilePaused =
+        DoorOpenPausedState -> RunningState
 
 
 // ===========================
@@ -119,6 +140,20 @@ type StopWhilePaused =
     DoorOpenPausedState -> State
 
 // NOTE there are two cases. Pressing Stop while Idle does nothing
+
+// alternative design with overly general approach
+module AlternativeStopDesignWithGeneralStateChange =
+
+    type Stop =
+        State -> State   // what happens if already stopped?
+
+// alternative design with very explicit states
+module AlternativeStopDesignWithExplicitState =
+
+    type StopWhileRunning =
+        RunningState -> DoorClosedIdleState
+    type StopWhilePaused =
+        DoorOpenPausedState -> DoorOpenIdleState
 
 
 // ===========================

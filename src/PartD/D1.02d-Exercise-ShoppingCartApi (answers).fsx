@@ -144,7 +144,7 @@ than just handling it silently, like this:
 
     type CartError =
         | CantPayForPaidCart
-        | CantRemovedFromEmptyCart
+        | CantRemoveFromEmptyCart
 
     type AddToActive = ShoppingCart * CartItem -> Result<ShoppingCart,CartError>
 

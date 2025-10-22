@@ -23,14 +23,15 @@ How it works:
    1. User sets the TimeRemaining and then pushes Start
       Note this can only been done when the oven is in "Door Closed and Idle" state
    2. If the user opens the door before the timer has finished:
-      the timer pause and the oven is in "Door Open and Paused" State
-   2. When the timer has finished:
+      the timer pauses and the oven is in "Door Open and Paused" State
+   3. When the timer has finished:
       the timer is reset and the oven is in "Door Closed and Idle" State
 
 Business rules:
 
 * The microwave cannot be running if the door is open
 * The microwave cannot be running if the TimeRemaining = 0
+* Once the microwave is running, you can't change the time (keep it simple!)
 
 
 *)
@@ -53,9 +54,14 @@ type TimeRemaining = undefined
 
 
 
-type DoorOpenIdleState = ??
+type DoorOpenIdleState = DoorOpenIdleState
+    // Note: even though there is no data, we want to keep these two states separate,
+    // so we define a new type for each one.
+    // We can do that by using the name of the type.
+
 type DoorClosedIdleState = ??
 type RunningState = ??
+
 // what else
 type State =
     // DoorClosedIdle etc

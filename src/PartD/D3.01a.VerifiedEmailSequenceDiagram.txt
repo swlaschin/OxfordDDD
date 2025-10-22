@@ -11,6 +11,6 @@ participant UnverifiedEMail
 participant VerifiedEMail
 
 Client -> UnverifiedEMail : verify
-UnverifiedEMail -> VerifiedEMail: transition
+UnverifiedEMail -> VerifiedEMail: transition to verified
 
 @enduml

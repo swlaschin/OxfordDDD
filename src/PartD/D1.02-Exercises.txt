@@ -11,7 +11,7 @@ Shopping cart API
 * D1.02c-Exercise-ShoppingCartApi.fsx
 
 Delivery API
-* D1.02e--Exercise-DeliveryApi.fsx
+* D1.02e-Exercise-DeliveryApi.fsx
 
 
 

@@ -33,11 +33,5 @@ database UserCredentialsDB
 participant EmailSystem
 actor User
 
-Librarian -> LibraryManagementSystem: 1. New account request
-Librarian -> LibraryManagementSystem: 2. Select account type
-Librarian -> LibraryManagementSystem: 3. Enter User details
-LibraryManagementSystem -> UserCredentialsDB : 4. Check User details
-LibraryManagementSystem -> LibraryManagementSystem : 5. Create new account
-LibraryManagementSystem -> User : 6. Email account details
 
 @enduml
