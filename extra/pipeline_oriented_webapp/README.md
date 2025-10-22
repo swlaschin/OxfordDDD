@@ -8,9 +8,13 @@ How to run this demo:
 2. Run the web server using
     `dotnet run`
 
+If you get a "framework error" when you do this, see below.
+
+
 3. Open a browser and go to
     `http://localhost:5000/`
 
+
 Errors:
 
-* If you get a framework error, open the file "fsharp_web.fsproj" and change the TargetFramework setting (see comment in that file)
+* If you get a "framework error", open the file "fsharp_web.fsproj" and change the TargetFramework setting (see comment in that file)

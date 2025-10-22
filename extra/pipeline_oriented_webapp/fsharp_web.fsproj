@@ -1,8 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <!-- change to net8.0, etc based on your framework -->
+    <TargetFramework>net8.0</TargetFramework>
+    <!--
+    If you get a "framework error",
+    change the value above to "net8.0","net9.0"
+    based on your framework
+    -->
   </PropertyGroup>
 
   <ItemGroup>
