@@ -32,7 +32,8 @@ A Course contains a number of student Enrolments
 
 // Answers:
 // 1. No.
-// 2. No. E.g. You could be able to change the grade of an Enrolment without changing the Course
+// 2. No. E.g. You could be able to change the grade of an Enrolment
+//    without changing the Course
 
 
 (*

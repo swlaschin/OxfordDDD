@@ -27,7 +27,7 @@ type String50 = private String50 of string
 // * What would be the worse that would happen if it wasn't wrapped? Nothing
 type FirstName = private FirstName of string
 
-// instead I might use it as an aliase for String or String50
+// instead I might use it as an alias for String or String50
 (*
 type FirstName = string    // OK
 type FirstName = String50  // OK
@@ -65,7 +65,8 @@ Here's an example of the two ways.
      Email1: EmailAddress
 
      // 2. putting the validation in a property attribute
-     //[Validation(EmailAddress)]
+     //@Validation(EmailAddress)
      Email2: string
 
      }
+

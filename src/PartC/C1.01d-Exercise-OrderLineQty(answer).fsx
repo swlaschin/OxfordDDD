@@ -17,6 +17,9 @@ module ConstrainedTypes =
     type OrderLineQty = private OrderLineQty of int
 
     module OrderLineQty =
+
+        let MAX_VALUE = 100
+
         /// Public function to create a OrderLineQty.
         /// I.e. wrap an int in a OrderLineQty (if possible!).
         /// Used like a "factory method" "constructor" etc
@@ -29,13 +32,13 @@ module ConstrainedTypes =
             //    if x ? a : b
             if qty < 1 then
                 None
-            else if qty > 100 then
+            else if qty > MAX_VALUE then
                 None
             else
                 Some (OrderLineQty qty)
 
         let maxValue =
-            OrderLineQty 100
+            OrderLineQty MAX_VALUE
 
         let minValue =
             OrderLineQty 1

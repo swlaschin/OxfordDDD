@@ -43,7 +43,7 @@ module Customer_Before =
 // contains the redesigned code
 module Customer_After_v1 =
 
-    type CustomerName = CustomerName of string
+    type CustomerName = string  // alias is probably better than wrapper
     type RegistrationId  = RegistrationId of int
 
     type Customer =
@@ -52,10 +52,10 @@ module Customer_After_v1 =
                                 // this could also be a custom record type
                                 // (see below)
 
-// Alternative design with custom record type for RegisteredCustomer
+// Alternative design #2 with custom record type for RegisteredCustomer
 module Customer_After_v2 =
 
-    type CustomerName = CustomerName of string
+    type CustomerName = string
     type RegistrationId  = RegistrationId of int
 
     type RegisteredCustomer = {
@@ -71,10 +71,10 @@ module Customer_After_v2 =
     // with special behavior (similar to VerifiedEmail)
     type HandleRegisteredOnly = RegisteredCustomer -> unit
 
-// Alternative design with common data refactored out
+// Alternative design #3 with common data (CustomerName) refactored out and stored at top-level
 module Customer_After_v3 =
 
-    type CustomerName = CustomerName of string
+    type CustomerName = string
     type RegistrationId  = RegistrationId of int
 
     // extract out the common data (the name)
@@ -160,11 +160,15 @@ module Order_Before =
        ShippedDate: System.DateTime option
        }
 
-// contains the redesigned code (but see an alternative design below)
+// contains the redesigned code (but see discussion of various alternative designs below)
 module Order_After_v1 =
 
     type OrderId = OrderId of int
+    
     type Amount = float
+    // alternatively, we might want a constrained "wrapper" version of Amount 
+    // type Amount = Amount of float // less than 100000
+    
     type Date = System.DateTime
 
     type NewOrder = {
@@ -173,7 +177,7 @@ module Order_After_v1 =
         }
 
     type PaidOrder = {
-        OrderId : OrderId
+        OrderId : NewOrder
         Items : string list
         PaidAmount : Amount
         PaidDate : Date
@@ -192,27 +196,44 @@ module Order_After_v1 =
         | Paid of PaidOrder
         | Completed of CompletedOrder
 
-// ====================================
-(*
-Question:
 
-All states have a OrderId and Items? Can that be refactored out?
-
-Answer:
-
-Yes, absolutely. The alternative design below does that.
-
-The good news is that both designs are equivalent and so either can be used.
-Which is better? It depends on the domain language? Do people say
-    A PaidOrder OR CompletedOrder
-or do they say
-    An Order with Status=Paid OR Status=Completed
-*)
-
-// ====================================
-
-// alternative design
+// Alternative design where each type refers to the previous type
+// PRO: no duplicate data
+// CON: you have to "dot in" many times to get the OrderId 
+//      for example: CompletedOrder.PaidOrder.OriginalOrder.OrderId
 module Order_After_v2 =
+
+    type OrderId = OrderId of int
+    type Amount = float
+    type Date = System.DateTime
+
+    type NewOrder = {
+        OrderId : OrderId
+        Items : string list
+        }
+
+    type PaidOrder = {
+        OriginalOrder: NewOrder
+        PaidAmount : Amount
+        PaidDate : Date
+        }
+
+    type CompletedOrder = {
+        PaidOrder : PaidOrder
+        ShippedDate : Date
+        }
+
+    type Order =
+        | New of NewOrder
+        | Paid of PaidOrder
+        | Completed of CompletedOrder
+
+
+// All states have a OrderId and Items? Can that be refactored out?
+// This alternative design moves them to the top level
+// PRO: less duplicate data
+// CON: "NewOrder" and "PaidOrder" objects can't be split up and processes in separate workflow.
+module Order_After_v3 =
 
     type OrderId = OrderId of int
     type Amount = float
@@ -239,6 +260,22 @@ module Order_After_v2 =
         Items : string list
         Status: OrderStatus
         }
+
+
+(*
+Which of these three alternative designs is best?
+
+Answer:
+
+All three designs are logically equivalent and so any one can be used.
+
+Which is better? It depends on the domain language? Do people say
+    A PaidOrder OR CompletedOrder
+or do they say
+    An Order with Status=Paid OR Status=Completed
+*)
+
+
 
 // ====================================
 

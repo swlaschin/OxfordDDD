@@ -13,8 +13,13 @@ and which are partial functions?
 // get first element of a list
 firstElement : int list -> int
 // PARTIAL. List could be empty
+    
     // a better design is to "try" to get the first element
-    tryFirstElement : int list -> int option  // TOTAL
+    tryFirstElement : int list  -> int option  // extended output
+
+    // or use a special NonEmptyList type
+    firstElement : NonEmptyList<int> -> int    // constrained input
+
 
 // get number of elements in a list
 elementCount : int list -> int
@@ -23,6 +28,8 @@ elementCount : int list -> int
 // convert a str to an int
 strToInt : string -> int
 // PARTIAL. String could be "" or "zzz" etc
+    // a better design is to "try" to convert
+    tryStrToInt : string -> int option  // extended output
 
 // format an int into a string
 intToStr : int -> string

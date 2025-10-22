@@ -140,12 +140,25 @@ module CardGameImplementation =
             let newCardList = card::cardList
             Hand newCardList
 
+    let emptyShuffledDeck = ShuffledDeck []
+
+    (*
+    // implementation of original Deal design doesn't compile!
+    type OriginalDeal = ShuffledDeck -> Card * ShuffledDeck 
+    let deal_v1 : OriginalDeal =
+        fun (ShuffledDeck cardList) ->
+            // the "::" pattern deconstructs a non-empty list into head/tail
+            match cardList with
+            | first::rest -> first, ShuffledDeck rest
+            | [] -> ??, emptyShuffledDeck  // what happens if input deck is empty?
+    *)
+
     let deal : Deal =
         fun (ShuffledDeck cardList) ->
             // the "::" pattern deconstructs a non-empty list into head/tail
             match cardList with
             | first::rest -> Some first, ShuffledDeck rest
-            | [] -> None, ShuffledDeck []
+            | [] -> None, emptyShuffledDeck 
 
     let shuffle : Shuffle =
         fun (Deck cardList) ->
