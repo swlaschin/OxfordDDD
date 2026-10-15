@@ -3,6 +3,8 @@
 // =================================
 
 
+SKIP THIS FOR NOW
+
 1. Read a web page and extract the ubiquitous language
 
 * A1.02a-Exercise-UkTaxLanguage.txt

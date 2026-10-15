@@ -2,6 +2,8 @@
 // Exercise : Ubiquitous language and subdomains : Netflix
 // =================================
 
+SKIP THIS FOR NOW
+
 Below is the org chart for Netflix's "Content Group"
 
 1. Think about what the Ubiquitous Language for each department might be like
