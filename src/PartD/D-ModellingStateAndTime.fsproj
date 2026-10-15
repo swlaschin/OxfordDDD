@@ -16,6 +16,7 @@
     <Content Include="D1.02-Exercises.txt" />
     <None Include="D1.02a-Exercise-MicrowaveApi.fsx" />
     <None Include="D1.02b-Exercise-MicrowaveApi(answers).fsx" />
+    <None Include="MicrowaveApi_Implementation.fsx" />
     <Content Include="D1.02c-Exercise-ShoppingCart(diagram).png" />
     <None Include="D1.02c-Exercise-ShoppingCartApi.fsx" />
     <None Include="D1.02d-Exercise-ShoppingCartApi (answers).fsx" />
