@@ -88,6 +88,7 @@ let fromDto (personDto:PersonDto) :Validation<Person,string> =
         |> Email.create
         |> Validation.ofResult
 
+    // see similar exercise in E.05b-Exercise-ValidationWithMap.fsx
     let nameOrError =
         (Validation.map2 createName) firstOrError lastOrError
     let personOrError =
@@ -137,9 +138,15 @@ badDto |> roundTrip
 // -------------------------------
 
 #r "System.Text.Json"
-open System.Text.Json
-let serializeJson = JsonSerializer.Serialize
-let deserializeJson<'a> (str:string) = JsonSerializer.Deserialize<'a>(str)
+let serializeJson = System.Text.Json.JsonSerializer.Serialize
+let deserializeJson<'a> (str:string) = System.Text.Json.JsonSerializer.Deserialize<'a>(str)
+
+(*
+// if code above does not compile, comment it out and try this instead
+#r "bin/Newtonsoft.Json.dll"
+let serializeJson = Newtonsoft.Json.JsonConvert.SerializeObject
+let deserializeJson<'a> (str:string) = Newtonsoft.Json.JsonConvert.DeserializeObject<'a>(str)
+*)
 
 
 let toJsonDto (person:Person) :string =

@@ -42,7 +42,7 @@
     <None Include="BX.99-FP-FrequentQuestions.fsx" />
     <None Include="FsharpOOSyntax.fsx" />
     <None Include="TurtleGraphicsLib.fsx" />
-    <None Include="MyMathLIbrary.fsx" />
+    <None Include="MyMathLibrary.fsx" />
   </ItemGroup>
 
 </Project>

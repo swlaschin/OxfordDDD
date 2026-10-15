@@ -76,7 +76,8 @@ let fromDto (personDto:PersonDto) :Validation<Person,string> =
     // use map2 here
     let nameOrError = ??
     // use map3 here
-    // see D folder / Exercise 05c, line 192
+
+    // see similar exercise in E.05b-Exercise-ValidationWithMap.fsx
     let personOrError = ??
 
     personOrError // return
@@ -118,3 +119,6 @@ goodDto |> roundTrip
 badDto |> roundTrip
 
 
+// -------------------------------
+// for a demonstration of a full JSON example, see the bottom of the answer file
+// -------------------------------
