@@ -1,6 +1,12 @@
 ﻿(*
 =================================
 Compensations and retries in Railway oriented programming
+
+Demonstrates
+* A: Working inside database transactions
+* B: Working with retries
+* C: Working with compensations
+
 =================================
 *)
 
@@ -125,7 +131,7 @@ let returnMessageR result =
 
 (*
 =========================================
-Part A -- Working inside database transactions
+Example A -- Working inside database transactions
 =========================================
 
 Let's say that you want to do part of the pipeline within a database
@@ -177,7 +183,7 @@ unsendableRequest
 
 (*
 =========================================
-Part B -- Working with retries
+Example B -- Working with retries
 =========================================
 
 Let's say that you want to repeat a section of the pipeline in case of error
@@ -217,7 +223,7 @@ unsendableRequest
 
 (*
 =========================================
-Part C -- Working with compensations
+Example C -- Working with compensations
 =========================================
 
 Let's say that you want to undo a action if there is a failure later

@@ -2,6 +2,7 @@
 
 open System
 
+// See E.05d_HowValidationWorks.fsx if you want to understand this file!
 
 //==============================================
 // The `Validation` type is the same as the `Result` type but with a *list* for failures

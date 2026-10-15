@@ -36,10 +36,7 @@ type Request = {
 
 type ErrorMessage =
   | NameNotBlank   // name not blank
-  | NameTooLong of int
-  | EmailCannotBeBlank
-  | SmtpServerError of string
-
+  // add others as needed
 
 //===========================================
 // Step 1 of the pipeline: validation
@@ -51,17 +48,24 @@ let nameNotBlank input =
   else
     Ok input
 
+// EXERCISE implement the error case
 let name50 input =
   if input.Name.Length > 50 then
     Error (NameTooLong 50)
   else
     Ok input
 
+// EXERCISE implement the error case
 let emailNotBlank input =
   if input.Email = "" then
     Error EmailCannotBeBlank
   else
     Ok input
+
+// EXERCISE add a function that fails if the email > 255 chars. 
+// input.Email.Length will give you the length
+let emailToLong input =
+    ???
 
 /// Combine all the smaller validation functions into one big one
 let validateRequest input =
@@ -69,7 +73,7 @@ let validateRequest input =
   |> nameNotBlank
   |> Result.bind name50
   |> Result.bind emailNotBlank
-
+  |> ??
 
 // -------------------------------
 // test the "validateRequest" step interactively
@@ -149,9 +153,10 @@ let sendEmail (request:Request) =
         printfn "Sending email=%s" request.Email
         request // return request for processing by next step
 
+// EXERCISE implement the error case
 let sendEmailR twoTrackInput =
     // convert SMTP exceptions to our list
-    let handler (ex:exn) = SmtpServerError ex.Message
+    let handler (ex:exn) = // Smtp Server Error with ex.Message as data
        // TODO Add SmtpServerError to the Error choice type!
        // Note that it has data associated with this choice.
     RopUtil.catchR sendEmail handler twoTrackInput
@@ -197,10 +202,12 @@ goodRequest     // also try badRequest and unsendableRequest here
 
 //===========================================
 // Translator from error type to string
+//
+// obviously the real ones would use resource files or similar
 //===========================================
 
-// obviously the real ones would use resource files!
 
+// EXERCISE match the errors to the translations
 let translateError_EN err =
     match err with
     | ?? ->
@@ -212,6 +219,7 @@ let translateError_EN err =
     | SmtpServerError msg ->
         sprintf "SmtpServerError [%s]" msg
 
+// EXERCISE match the errors to the translations
 let translateError_FR err =
     match err with
     | ?? ->

@@ -38,6 +38,7 @@ type ErrorMessage =
   | NameMustNotBeBlank
   | NameMustNotBeLongerThan of int
   | EmailMustNotBeBlank
+  | EmailMustNotBeLongerThan of int
   | SmtpServerError of string
 
 
@@ -51,15 +52,25 @@ let nameNotBlank input =
   else
     Ok input
 
+// EXERCISE implement the error case
 let name50 input =
   if input.Name.Length > 50 then
     Error (NameMustNotBeLongerThan 50)
   else
     Ok input
 
+// EXERCISE implement the error case
 let emailNotBlank input =
   if input.Email = "" then
     Error EmailMustNotBeBlank
+  else
+    Ok input
+
+// EXERCISE add a function that fails if the email > 255 chars. 
+// input.Email.Length will give you the length
+let emailToLong input =
+  if input.Email.Length > 255 then
+    Error (EmailMustNotBeLongerThan 255)
   else
     Ok input
 
@@ -69,6 +80,7 @@ let validateRequest input =
   |> nameNotBlank
   |> Result.bind name50
   |> Result.bind emailNotBlank
+  |> Result.bind emailToLong
 
 
 // -------------------------------
@@ -142,6 +154,7 @@ goodRequest    // also try badRequest and unsendableRequest here
 // Step 4 of the pipeline: Send an email
 //===========================================
 
+// Assume that this is a library function we don't control
 let sendEmail (request:Request) =
     if request.Email.EndsWith("example.com") then
         failwithf "Can't send email to %s" request.Email
@@ -149,6 +162,7 @@ let sendEmail (request:Request) =
         printfn "Sending email=%s" request.Email
         request // return request for processing by next step
 
+// EXERCISE implement the error case
 let sendEmailR twoTrackInput =
     // convert SMTP exceptions to our list
     let handler (ex:exn) = SmtpServerError ex.Message
@@ -195,10 +209,12 @@ goodRequest     // also try badRequest and unsendableRequest here
 
 //===========================================
 // Translator from error type to string
+//
+// obviously the real ones would use resource files or similar
 //===========================================
 
-// obviously the real ones would use resource files!
 
+// EXERCISE match the errors to the translations
 let translateError_EN err =
     match err with
     | NameMustNotBeBlank ->
@@ -207,9 +223,12 @@ let translateError_EN err =
         sprintf "Name must not be longer than %i chars" i
     | EmailMustNotBeBlank ->
         "Email must not be blank"
+    | EmailMustNotBeLongerThan i ->
+        sprintf "EMail must not be longer than %i chars" i
     | SmtpServerError msg ->
         sprintf "SmtpServerError [%s]" msg
 
+// EXERCISE match the errors to the translations
 let translateError_FR err =
     match err with
     | NameMustNotBeBlank ->
@@ -218,6 +237,8 @@ let translateError_FR err =
         sprintf "Nom ne doit pas être plus long que %i caractères" i
     | EmailMustNotBeBlank ->
         "Email doit pas être vide"
+    | EmailMustNotBeLongerThan i ->
+        sprintf "Email ne doit pas être plus long que %i caractères" i
     | SmtpServerError msg ->
         sprintf "SmtpServerError [%s]" msg
 

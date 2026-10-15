@@ -20,10 +20,10 @@ module Validation =
         xR |> Result.mapError List.singleton
 
 //-----------------------------------
-// Lifting
+// Basic implementations using explicit pattern matching
 //-----------------------------------
 
-// implementations using explicit pattern matching
+
 module MapImplementation_v1 =
 
     /// Lift a two parameter function to use Validation parameters
@@ -46,6 +46,10 @@ module MapImplementation_v1 =
         | Error e1, Ok x2, Error e3 -> Error (e1 @ e3)
         | Error e1, Error e2, Error e3 -> Error (e1 @ e2 @ e3)
 
+//-----------------------------------
+// You can make the implementation simpler by defining a helper function "Apply"
+//-----------------------------------
+
 // implementations using Apply
 module MapImplementation_v2 =
 
@@ -66,7 +70,11 @@ module MapImplementation_v2 =
     let map3_v2 f (x1V:Validation<_,_>) (x2V:Validation<_,_>) (x3V:Validation<_,_>) =
         apply (map2 f x1V x2V) x3V
 
-// implementations using the Apply infix operator <*>
+
+//-----------------------------------
+// You can make the implementation even more concise by defining a infix operator for Apply
+//-----------------------------------
+
 module MapImplementation_v3 =
 
     let apply = MapImplementation_v2.apply
@@ -78,6 +86,12 @@ module MapImplementation_v3 =
     let map3 f (x1V:Validation<_,_>) (x2V:Validation<_,_>) (x3V:Validation<_,_>) =
         let ( <*> ) = apply
         (Ok f) <*> x1V <*> x2V <*> x3V
+
+
+//-----------------------------------
+// And if you defined an infix operator for map as well, you
+// you make the whole thing look a little like calling a function
+//-----------------------------------
 
 // implementations using <*> and map as well
 module MapImplementation_v4 =

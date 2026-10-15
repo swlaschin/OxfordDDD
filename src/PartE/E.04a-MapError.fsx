@@ -10,8 +10,8 @@
 // A silly domain
 //----------------------
 
-type Apple = RedApple | GreenApple | YellowApple
-type Banana = LargeBanana | SmallBanana
+type Apple = RedApple | BadBrownApple | YellowApple
+type Banana = LargeBanana | BadBrownBanana
 type Cherry = SweetCherry | TartCherry
 
 type AppleError =
@@ -27,13 +27,13 @@ type BananaError =
 let functionA apple =
     match apple with
     | RedApple -> Ok LargeBanana
-    | YellowApple -> Ok SmallBanana
-    | GreenApple -> Error AppleIsBrown
+    | YellowApple -> Ok BadBrownBanana // OK here but this will cause a downstream error
+    | BadBrownApple -> Error AppleIsBrown
 
 let functionB banana =
     match banana with
     | LargeBanana -> Ok SweetCherry
-    | SmallBanana -> Error BananaIsBrown
+    | BadBrownBanana -> Error BananaIsBrown
 
 
 // ----------------------------------
@@ -59,6 +59,7 @@ type FruitError =
     | AppleErrorCase of AppleError
     | BananaErrorCase of BananaError
 
+// at some point you might even combine this with another system ("Meat") with its own errors
 type FoodError =
     | FruitErrorCase of FruitError
     | MeatErrorCase
@@ -72,8 +73,9 @@ type FoodError =
 let functionA' apple =   // "functionA'" means a modification of "functionA"
 
     // define the converter function to be used with mapError
-    let transformError (appleError:AppleError) :FruitError =  // wraps the AppleError in a FruitError
-        AppleErrorCase appleError
+    let transformError (appleError:AppleError) :FruitError =  
+        // wraps the AppleError into a FruitError
+        FruitError.AppleErrorCase appleError
 
     apple
     |> functionA
@@ -88,7 +90,7 @@ let functionA' apple =   // "functionA'" means a modification of "functionA"
 let functionB' banana =
     banana
     |> functionB
-    |> Result.mapError BananaErrorCase  // short version.
+    |> Result.mapError FruitError.BananaErrorCase  // short version.
                                         // The case tag can be used as a mapper function directly!
 
 // ----------------------------------
@@ -102,7 +104,7 @@ let functionAThenB' apple =
 
 // test
 functionAThenB' Apple.RedApple
-functionAThenB' Apple.GreenApple
+functionAThenB' Apple.BadBrownApple
 functionAThenB' Apple.YellowApple
 
 // ----------------------------------

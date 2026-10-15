@@ -44,7 +44,7 @@ open Domain
 let createName (first:String10) (last:String10) :PersonalName =
     {First=first; Last=last}
 
-let validateName inputFirst inputLast =
+let createNameOrError (inputFirst:string) (inputLast:string) =
 
     let firstOrError =
         inputFirst
@@ -68,11 +68,11 @@ let goodName =
     // input from user
     let inputFirst = "Albert" // less than 10 -- good!
     let inputLast = "Smith"   // less than 10 -- good!
-    validateName inputFirst inputLast
+    createNameOrError inputFirst inputLast
 
 let badName =
     // input from user
     let inputFirst = "Jean-Claude"   // more than 10 -- bad!
     let inputLast = ""               // empty -- bad!
-    validateName inputFirst inputLast
+    createNameOrError inputFirst inputLast
 

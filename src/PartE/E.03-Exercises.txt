@@ -7,7 +7,6 @@ Read through and understand the example
 
 Do exercises:
 * 03b-Exercise-RopWithErrorType.fsx
-* 03d-Exercise-TurtleError.fsx
 
 Interested in transactions, compensations and retries?
 * 03g-RopCompensations.fsx

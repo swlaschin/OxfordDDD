@@ -21,8 +21,6 @@
     <None Include="E.03a-RopWithStringError.fsx" />
     <None Include="E.03b-Exercise-RopWithErrorType.fsx" />
     <None Include="E.03c-Exercise-RopWithErrorType(answers).fsx" />
-    <None Include="E.03d-Exercise-TurtleError.fsx" />
-    <None Include="E.03e-Exercise-TurtleError(answers).fsx" />
     <None Include="E.03g-RopCompensations.fsx" />
     <None Include="E.03h-RopWithTicTacToe.fsx" />
     <None Include="E.03i-Exercise-RopWithCoffeeMaker.fsx" />
@@ -33,6 +31,7 @@
     <None Include="E.04c-Exercise-MapError(answers).fsx" />
     <Content Include="E.05-Exercises.txt" />
     <None Include="E.05a-ValidationWithMap.fsx" />
+    <None Include="E.05a-ValidationWithMap_v2.fsx" />
     <None Include="E.05b-Exercise-ValidationWithMap.fsx" />
     <None Include="E.05c-Exercise-ValidationWithMap(answers).fsx" />
     <None Include="E.05d_HowValidationWorks.fsx" />

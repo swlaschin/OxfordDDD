@@ -80,7 +80,7 @@ open Domain
 let createName (first:String10) (last:String10) :PersonalName =
     {First=first; Last=last}
 
-let createNameOrError inputFirst inputLast =
+let createNameOrError (inputFirst:string) (inputLast:string) =
     let firstOrError =
         String10.create "firstName" inputFirst
         |> Validation.ofResult
@@ -111,7 +111,7 @@ let badName =
 let createPerson name age email :Person =
     {Name=name; Age=age; Email=email}
 
-let createPersonOrError inputFirst inputLast inputAge inputEmail =
+let createPersonOrError (inputFirst:string) (inputLast:string) (inputAge:int) (inputEmail:string) =
 
     // Exercise: fix the error
     let nameOrError = createName inputFirst inputLast
@@ -124,7 +124,7 @@ let createPersonOrError inputFirst inputLast inputAge inputEmail =
         Email.create inputEmail
         |> Validation.ofResult
 
-    // Exercise: fix the compiler error by using Validation.map3
+    // Exercise: fix the compiler error 
     let personOrError =
         createPerson nameOrError ageOrError emailOrError
 

@@ -126,7 +126,7 @@ module CompoundErrors =
             match vError with
             | NameMustNotBeBlank -> ()
             | EmailMustNotBeBlank -> ()
-        | Db dbError -> 
+        | Db dbError ->
             match dbError with
             | UserNotFound -> ()
             | DuplicateKey -> ()
