@@ -28,7 +28,6 @@
     <None Include="D1.03c-Exercise-DeliveryApiClient.fsx" />
     <None Include="D1.03d-Exercise-DeliveryApiClient (answers).fsx" />
     <Content Include="D2.01-Exercises.txt" />
-    <None Include="D2.01a-EventSourcedTurtle.fsx" />
     <None Include="D2.02b-EventSourcedTicTacToe.fsx" />
     <None Include="D2.02c-EventSourcedShoppingCart.fsx" />
     <None Include="D2.02d-EventSourcedShoppingCart(answers).fsx" />

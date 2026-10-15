@@ -15,8 +15,6 @@
     <None Include="F1.01g-Exercise-UpdateCustomer-Pure(answers).fsx" />
     <Content Include="F1.02-Exercises.txt" />
     <Content Include="F1.03.Exercises.txt" />
-    <None Include="FPTurtleLib.fsx" />
-    <None Include="FPTurtleLibBounded.fsx" />
     <None Include="PersonDomain.fsx" />
     <None Include="Result.fsx" />
     <None Include="RopUtil.fsx" />

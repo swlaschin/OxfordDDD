@@ -52,7 +52,7 @@ type BoardState = {
 // Events and commands
 // ====================================
 
-/// A desired action on a turtle
+/// A desired action 
 type TTTCommand =
     | Play of Move
 

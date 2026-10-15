@@ -4,8 +4,8 @@
 
 Read and understand:
 
-* D2.01a-EventSourcedTurtle.fsx
 * D2.02b-EventSourcedTicTacToe.fsx
+
 
 Do one or more of the following exercises:
 

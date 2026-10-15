@@ -31,7 +31,6 @@
     <None Include="E.04c-Exercise-MapError(answers).fsx" />
     <Content Include="E.05-Exercises.txt" />
     <None Include="E.05a-ValidationWithMap.fsx" />
-    <None Include="E.05a-ValidationWithMap_v2.fsx" />
     <None Include="E.05b-Exercise-ValidationWithMap.fsx" />
     <None Include="E.05c-Exercise-ValidationWithMap(answers).fsx" />
     <None Include="E.05d_HowValidationWorks.fsx" />
