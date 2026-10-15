@@ -5,6 +5,9 @@
 Do:
 * B2.03a-Exercise-ToRomanNumbers.fsx
 
+Compare your implementation with the implementations in:
+* B2.03x-Exercise-ToRomanNumbers_different_implementations.fsx
+
 // =================================
 // Got extra time?
 // =================================

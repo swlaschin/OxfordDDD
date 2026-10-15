@@ -15,7 +15,7 @@
     <Content Include="B2.03-Exercises.txt" />
     <None Include="B2.03a-Exercise-ToRomanNumbers.fsx" />
     <None Include="B2.03b-Exercise-ToRomanNumbers(answer).fsx" />
-    <None Include="B2.03x-ToRomanNumbers_different_implementations.fsx" />
+    <None Include="B2.03x-Exercise-ToRomanNumbers_different_implementations.fsx" />
     <None Include="B2.03c-Exercise-FromRomanNumbers.fsx" />
     <None Include="B2.03d-Exercise-FromRomanNumbers(answer).fsx" />
     <None Include="B2.03e-Exercise-Decorator.fsx" />
@@ -42,6 +42,7 @@
     <None Include="BX.99-FP-FrequentQuestions.fsx" />
     <None Include="FsharpOOSyntax.fsx" />
     <None Include="TurtleGraphicsLib.fsx" />
+    <None Include="MyMathLIbrary.fsx" />
   </ItemGroup>
 
 </Project>

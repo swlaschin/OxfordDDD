@@ -1,6 +1,7 @@
 ﻿module rec CrcCardDemo =
 // =================================
-// CRC Demo
+// Class-Responsibility-Card (CRC) approach
+// to object-oriented design
 // =================================
 
     // aliases

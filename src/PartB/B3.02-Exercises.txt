@@ -30,10 +30,13 @@ by averaging all the grades for the enrollments in that Course.
 Exercises
 -------------------------------
 
-Design using a OO/behaviour approach first
+Pick one or both of the exercises to compare the OO style with the FP style.
+Look at the answers if you want.
+
+Design using a OO/behaviour approach
 * B3.02a-StudentEnrolmentOO.fsx
 
-Design using a functional/type approach next
+Design using a functional/type approach
 * B3.02c-StudentEnrolmentFP.fsx
 
 // =================================
