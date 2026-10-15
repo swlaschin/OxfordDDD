@@ -1,0 +1,1 @@
+The slide PDFs are available from the Computer Science department or via a DropBox link that I provide in class.
